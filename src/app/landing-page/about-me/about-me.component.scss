@@ -3,23 +3,3 @@
 @import './../../../font.style.scss';
 @import './../../../color.style.scss';
 
-section {
-    background-image: url('./../../../assets/img/shadows/Vector.png');
-    z-index: 1;
-    position: absolute;
-    width: 100%;
-    height: 1080px;
-    top: 377.6px;
-
-
-    .vector {
-        position: absolute;
-        width: 100%;
-        height: 1078.6px;
-        left: -2px;
-        background: radial-gradient(102.53% 81.55% at 46.74% 3.94%, #1A2743 0.37%, #27334B 13.54%, #141D2F 71.91%)
-            /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
-        ;
-
-    }
-}

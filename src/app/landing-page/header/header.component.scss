@@ -4,115 +4,105 @@
 @import './../../../color.style.scss';
 
 section {
-    background-color: $background_color;
     width: 100%;
     height: 100vh;
-    @include dFlex();
+    background-color: $background_color;
+}
+
+.header {
+    @include dFlex($jc: space-between);
 }
 
 .photo-background {
-    width: 690.7px;
-    height: 671.38px;
-    top: 221.62px;
-    left: 12px;
-    position: absolute;
+    margin-top: 252px;
+    border: 1px solid white;
 }
 
 .img-contain {
     position: absolute;
-    height: 705px;
-    width: 646px;
-    top: 106px;
-    left: 47px;
-    overflow: hidden;
-    @include dFlex();
+    top: 30px;
+    left: 30px;
+}
 
-    img {
-        height: 680px;
-        width: 600px;
-    }
+.text-button-contain {
+    width: 772px;
+    height: 300px;
+    margin-right: 10vw;
+    flex-direction: column;
+
+    @include dFlex();
 }
 
 .frame3 {
-    position: absolute;
-    width: 800px;
     height: 172px;
-    top: 297px;
-    left: 45vw;
-    @include dFlex($g: 35px);
-    //border: 2px solid whitesmoke;
-}
 
-.frame3-text {
-    width: 152px;
-    height: 63px;
-    rotate: -90deg;
-    text-align: center;
     @include dFlex();
 
-    p {
-        font-weight: 400;
-        font-size: 60px;
-        line-height: 76.8px;
-        color: $color_white;
+    .frame3-text {
+        width: 152px;
+        height: 63px;
+        transform: rotate(-90deg);
+
+        p {
+            font-family: Poppins;
+            font-size: 64px;
+            font-weight: 400;
+            line-height: 77px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: $color_white;
+        }
     }
 }
 
 .frame2 {
-    //border: 2px solid whitesmoke;
-    width: 620px;
-    height: 172px;
-
     h2 {
-        //border: 2px solid whitesmoke;
         width: 620px;
         height: 108px;
-        font-family: 'Poppins';
-        font-weight: 700;
+        font-family: Poppins;
         font-size: 90px;
+        font-weight: 700;
         line-height: 108px;
+        letter-spacing: 0em;
+        text-align: left;
         color: $color_white;
     }
 
     h5 {
-        //border: 2px solid whitesmoke;
         width: 619px;
         height: 70px;
-        font-weight: 400;
+        font-family: Poppins;
         font-size: 58px;
-        line-height: 69.6px;
+        font-weight: 400;
+        line-height: 70px;
+        letter-spacing: 0em;
+        text-align: left;
         color: $color_blue;
     }
 }
 
-.letsTalk {
+.let-talk {
     width: 165px;
     height: 58px;
-    top: 513px;
-    left: 65vw;
-    border-radius: 10px;
     padding: 15px 30px 15px 30px;
-    position: absolute;
-    box-shadow: 4px 4px 4px 0px #00000040;
+    border-radius: 10px;
+    margin-top: 50px;
     background-color: $color_lightblue;
     cursor: pointer;
 
-
-    &:hover {
-        // On click
-        // Scroll to: "anchor 4";
-        // Animate: Animate;
-        animation-timing-function: ease-out;
-        animation-duration: 300ms;
-    }
-
     span {
-        width: 10px;
+        display: flex;
+        width: 105px;
         height: 28px;
+        font-family: Poppins;
         font-size: 23px;
-        line-height: 27.6px;
         font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: left;
         color: $color_white;
+
     }
+
 
 }
