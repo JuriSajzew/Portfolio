@@ -15,20 +15,24 @@ section {
 
 .photo-background {
     margin-top: 252px;
-    border: 1px solid white;
 }
 
 .img-contain {
     position: absolute;
-    top: 30px;
+    top: 85px;
     left: 30px;
+
+    img {
+        height: 97vh;
+    }
 }
 
 .text-button-contain {
-    width: 772px;
     height: 300px;
-    margin-right: 10vw;
+    margin-right: 25vw;
+    margin-top: -53vh;
     flex-direction: column;
+    width: 220px;
 
     @include dFlex();
 }
@@ -44,7 +48,7 @@ section {
         transform: rotate(-90deg);
 
         p {
-            font-family: Poppins;
+            font-family: 'Poppins';
             font-size: 64px;
             font-weight: 400;
             line-height: 77px;
@@ -91,7 +95,7 @@ section {
     cursor: pointer;
 
     span {
-        display: flex;
+        @include dFlex();
         width: 105px;
         height: 28px;
         font-family: Poppins;
@@ -101,7 +105,6 @@ section {
         letter-spacing: 0em;
         text-align: left;
         color: $color_white;
-
     }
 
 
