@@ -2,6 +2,7 @@
 @import './../../../mixin.style.scss';
 @import './../../../font.style.scss';
 @import './../../../color.style.scss';
+@import'./../../../media.scss';
 
 section {
     width: 100%;
@@ -30,7 +31,7 @@ section {
 .text-button-contain {
     height: 300px;
     margin-right: 25vw;
-    margin-top: -53vh;
+    margin-top: -30vh;
     flex-direction: column;
     width: 220px;
 

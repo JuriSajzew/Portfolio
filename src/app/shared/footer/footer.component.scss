@@ -2,6 +2,7 @@
 @import './../../../mixin.style.scss';
 @import './../../../font.style.scss';
 @import './../../../color.style.scss';
+@import'./../../../media.scss';
 
 section {
     @include dFlex($jc: space-between);
