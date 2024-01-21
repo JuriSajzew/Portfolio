@@ -21,10 +21,17 @@ section {
 }
 
 .about-contain {
-    @include dFlex($jc: start, $g: 120px);
+    @include dFlex($jc: space-between);
     margin-top: -85vh;
+    margin-right: 15vw;
 
-    a {
+
+}
+
+.about-contain1 {
+    @include dFlex($jc: start, $g: 120px);
+
+    span {
         font-family: Poppins;
         font-size: 23px;
         font-weight: 400;
@@ -32,6 +39,27 @@ section {
         letter-spacing: 0em;
         text-align: left;
         text-decoration: none;
+        color: $color_white;
+    }
+}
+
+.scroll-contain {
+    @include dFlex($g: 3px);
+    flex-direction: column;
+    width: 28px;
+    height: 160px;
+    cursor: pointer;
+
+    span {
+        width: 245px;
+        height: 28px;
+        transform: rotate(90deg);
+        font-family: Poppins;
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: left;
         color: $color_white;
     }
 }
@@ -44,6 +72,10 @@ section {
         height: 30px;
         object-fit: contain;
     }
+}
+
+.about-header {
+    @include dFlex($jc: space-between);
 }
 
 .about-me-contain {
@@ -82,5 +114,19 @@ section {
 
     span {
         color: $color_white;
+    }
+}
+
+.image-contain {
+    @include dFlex();
+    margin-bottom: -179px;
+
+    .profile-img {
+
+
+        img {
+            border: 4px solid #00BEE8;
+            border-radius: 235px;
+        }
     }
 }
