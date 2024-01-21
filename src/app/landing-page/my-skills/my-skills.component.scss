@@ -1,0 +1,128 @@
+@import './../../../styles.scss';
+@import './../../../mixin.style.scss';
+@import './../../../font.style.scss';
+@import './../../../color.style.scss';
+@import'./../../../media.scss';
+
+section {
+    height: 100vh;
+    background-color: $background_color;
+}
+
+.my-skills-contain {
+    @include dFlex($jc: space-between);
+}
+
+.my-skills-text {
+    display: flex;
+}
+
+.my-skills-vector1 {
+    position: absolute;
+    
+    img{
+        width: 428.59px;
+        height: 951.44px;
+    }
+}
+
+.icon-contain {
+    width: 721px;
+    height: 414.41px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 123px;
+    margin-left: 100px;
+    padding-top: 100px;
+}
+
+.icon-img {
+    width: 88px;
+    height: 100px;
+    @include dFlex($g: 10px);
+    flex-direction: column;
+
+    img {
+        width: 55.8px;
+        height: 60px;
+    }
+
+    span {
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: $color_white;
+
+    }
+}
+
+.my-skills-text-contain {
+    width: 526px;
+    height: 180px;
+    display: flex;
+    gap: 20px;
+
+    h2 {
+        font-family: Poppins;
+        font-size: 90px;
+        font-weight: 700;
+        line-height: 108px;
+        letter-spacing: 0em;
+        text-align: right;
+        color: $color_white;
+        width: 100%;
+    }
+
+    span {
+        width: 100%;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: right;
+        color: $color_white;
+        margin-top: 50px;
+    }
+}
+
+.my-skills-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 60vw;
+}
+
+.my-skills-vector {
+    width: 58px;
+}
+
+.example-button-row {
+    width: 200px;
+    height: 58px;
+    padding: 15px 30px 15px 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #00BEE8;
+    margin-top: 70px;
+
+    button {
+        font-family: Poppins;
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: center;
+        border: none;
+        background-color: $color_lightblue;
+        color: $color_white;
+    }
+
+}

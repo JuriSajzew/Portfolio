@@ -1,1 +1,25 @@
-<p>my-skills works!</p>
+<section>
+    <div class="my-skills-contain">
+        <div class="icon-contain">
+            <div class="icon-img" *ngFor="let element of iconImg; let i = index">
+                <img [src]="element" alt="Icon">
+                <span>{{iconText[i]}}</span>
+            </div>
+        </div>
+        <div class="my-skills-text-contain">
+            <div class="my-skills-text">
+                <h2>My skills</h2>
+                <span>
+                    I have grown my frontend developments skills
+                    that have <br> allowed me to create different real
+                    projects.
+                </span>
+                <div class="example-button-row">
+                    <button>Get in Touch</button>
+                </div>
+            </div>
+            <img class="my-skills-vector" src="./../../../assets/img/shadows/my_skills_vector.svg" alt="">
+        </div>
+    </div>
+    <img class="my-skills-vector1" src="./../../../assets/img/shadows/my-skills-vector.svg" alt="">
+</section>
