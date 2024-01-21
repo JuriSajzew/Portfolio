@@ -4,6 +4,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HeaderComponent } from './header/header.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { MySkillsComponent } from './my-skills/my-skills.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @Component({
   selector: 'app-landing-page',
@@ -13,7 +14,8 @@ import { MySkillsComponent } from './my-skills/my-skills.component';
     NavBarComponent,
     HeaderComponent,
     AboutMeComponent,
-    MySkillsComponent],
+    MySkillsComponent,
+    PortfolioComponent],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.scss'
 })
