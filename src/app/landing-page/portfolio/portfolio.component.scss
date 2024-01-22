@@ -54,17 +54,93 @@ section {
 }
 
 .project-contain {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include dFlex($g: 35px);
 
     .project-img {
-        width: 300px;
-        height: 300px;
+        width: 25vw;
+        height: 35vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         img {
-            width: 300px;
-            height: 300px;
+            width: 100%;
+            height: 100%;
         }
+    }
+}
+
+.project-text {
+    width: 32vw;
+    height: 35vh;
+    @include dFlex($ai: start, $g: 10px);
+    flex-direction: column;
+
+    h3 {
+        font-family: Poppins;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 38px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #4B47FF;
+    }
+
+    h4 {
+        font-family: Poppins;
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #00BEE8;
+    }
+
+    h5 {
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $color_white;
+    }
+}
+
+.button-contain {
+    @include dFlex($jc: space-around);
+    width: 100%;
+    margin-top: 30px;
+
+    .button1 {
+        width: 156px;
+        height: 58px;
+        border-radius: 10px;
+        padding: 15px 30px 15px 30px;
+        background-color: #4B47FF;
+        font-family: Poppins;
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: $color_white;
+    }
+
+    .button2 {
+        width: 137px;
+        height: 58px;
+        border-radius: 10px;
+        border: 1px solid $color_lightblue;
+        padding: 15px 30px 15px 30px;
+        font-family: Poppins;
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: $color_white;
+        background-color: #141d2f;
+
     }
 }
