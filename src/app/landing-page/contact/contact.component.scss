@@ -1,0 +1,215 @@
+@import './../../../styles.scss';
+@import './../../../mixin.style.scss';
+@import './../../../font.style.scss';
+@import './../../../color.style.scss';
+@import'./../../../media.scss';
+
+section {
+    width: 100%;
+    height: auto;
+    background-color: $background_color;
+}
+
+.contact-header {
+    @include dFlex($jc: start, $g: 20px);
+    //border: 1px solid white;
+}
+
+.contact-vector {
+    width: 5%;
+    @include dFlex($jc: start);
+
+    img {
+        width: 81%;
+    }
+}
+
+.contact-text {
+    width: 376px;
+    height: 108px;
+
+    h2 {
+        font-family: Poppins;
+        font-size: 90px;
+        font-weight: 700;
+        line-height: 108px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: $color_white;
+
+    }
+}
+
+.contact-contain {
+    @include dFlex($jc: space-around, $g: 50px);
+    margin-top: 70px;
+}
+
+.email-text {
+    width: 50%;
+
+    h4 {
+        font-family: Poppins;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 38px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $color_white;
+        margin-bottom: 36px;
+    }
+
+    h5 {
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $color_white;
+        margin-bottom: 22px;
+    }
+}
+
+.email-text1 {
+    margin-top: 10px;
+    margin-left: 100px
+}
+
+.email-contain {
+    @include dFlex();
+    flex-direction: column;
+    width: 50%;
+
+    input {
+        width: 617px;
+        height: 50px;
+        padding: 15px 25px 15px 25px;
+        border-radius: 10px;
+        border: 1px;
+        gap: 10px;
+        display: block;
+        background: linear-gradient(0deg, #141D2F, #141D2F),
+            linear-gradient(0deg, #4B47FF, #4B47FF);
+        border: 1px solid #4B47FF;
+        color: $color_white;
+        transition: color 0.3sec;
+        margin-bottom: 30px;
+
+        &::placeholder {
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: $color_white;
+        }
+
+        &:focus {
+            color: $color_white;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: $color_white;
+        }
+    }
+
+    textarea {
+        width: 617px;
+        height: 202px;
+        padding: 15px 25px 15px 25px;
+        border-radius: 10px;
+        border: 1px;
+        gap: 10px;
+        background: linear-gradient(0deg, #141D2F, #141D2F),
+            linear-gradient(0deg, #4B47FF, #4B47FF);
+        border: 1px solid #4B47FF;
+        color: $color_white;
+        transition: color 0.3sec;
+        margin-bottom: 20px;
+
+
+        &::placeholder {
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: $color_white;
+        }
+
+        &:focus {
+            color: $color_white;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: $color_white;
+        }
+    }
+
+    button {
+        width: 257px;
+        height: 58px;
+        padding: 15px 30px 15px 30px;
+        border-radius: 10px;
+        gap: 10px;
+        background: #B6B6B6;
+        box-shadow: 4px 4px 4px 0px #00000040;
+        font-family: Poppins;
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: $color_white;
+        margin-top: 50px;
+    }
+}
+
+.checkbox-contain {
+    @include dFlex($jc: start, $g: 20px);
+    width: 70%;
+
+    h5 {
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $color_white;
+
+        a {
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #4B47FF;
+            text-decoration: none;
+            text-align: center;
+        }
+    }
+}
+
+.contact-footer-vector {
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+    @include dFlex($jc: start);
+    margin-top: 124px;
+    margin-bottom: -234px;
+
+    img {
+        height: 100%;
+    }
+}

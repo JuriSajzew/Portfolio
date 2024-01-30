@@ -12,7 +12,7 @@
         </h5>
     </div>
 
-    <div class="project-contain" *ngFor="let element of projectImg; let i = index">
+    <div class="project-contain" [class.flex-row-reverse]="i % 2 != 0" *ngFor="let element of projectImg; let i = index">
         <div class="project-img">
             <img [src]="element" alt="">
         </div>

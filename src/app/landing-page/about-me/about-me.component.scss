@@ -6,72 +6,9 @@
 
 section {
     width: 100%;
-    height: 164vh;
+    height: 170vh;
     background-color: $background_color;
-}
-
-.vector {
-    width: 100%;
-    margin-top: -57vh;
-
-    img {
-        width: 100%;
-        height: auto;
-    }
-}
-
-.about-contain {
-    @include dFlex($jc: space-between);
-    margin-top: -85vh;
-    margin-right: 15vw;
-
-
-}
-
-.about-contain1 {
-    @include dFlex($jc: start, $g: 120px);
-
-    span {
-        font-family: Poppins;
-        font-size: 23px;
-        font-weight: 400;
-        line-height: 28px;
-        letter-spacing: 0em;
-        text-align: left;
-        text-decoration: none;
-        color: $color_white;
-    }
-}
-
-.scroll-contain {
-    @include dFlex($g: 3px);
-    flex-direction: column;
-    width: 28px;
-    height: 160px;
-    cursor: pointer;
-
-    span {
-        width: 245px;
-        height: 28px;
-        transform: rotate(90deg);
-        font-family: Poppins;
-        font-size: 23px;
-        font-weight: 400;
-        line-height: 28px;
-        letter-spacing: 0em;
-        text-align: left;
-        color: $color_white;
-    }
-}
-
-.img-contain {
-    @include dFlex($g: 30px);
-
-    img {
-        width: 30px;
-        height: 30px;
-        object-fit: contain;
-    }
+    border: 1px solid wheat;
 }
 
 .about-header {
@@ -122,16 +59,24 @@ section {
     margin-bottom: -179px;
 
     .profile-img {
-
+        width: 350px;
+        height: 350px;
+        overflow: hidden;
+        border: 4px solid #00BEE8;
+        border-radius: 50%;
+        @include dFlex();
 
         img {
-            border: 4px solid #00BEE8;
-            border-radius: 235px;
+            width: 100%;
         }
+    }
+
+    img {
+        width: 43%;
     }
 }
 
-.about-me-vector{
+.about-me-vector {
     position: absolute;
     right: 0;
 }

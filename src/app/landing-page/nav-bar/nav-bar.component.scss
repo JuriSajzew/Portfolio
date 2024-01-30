@@ -32,10 +32,10 @@ section {
 }
 
 .navBar-contain {
-    width: 442px;
+    width: 50%;
     height: 32px;
 
-    @include dFlex($g: 29px);
+    @include dFlex($jc: flex-end, $g: 29px);
 
     a {
         //styleName: Style 1/subtitles;
@@ -47,5 +47,11 @@ section {
         text-align: left;
         color: $color_white;
         text-decoration: none;
+    }
+}
+
+@media (max-width: 1085px) {
+    .navBar-contain {
+        display: none;
     }
 }

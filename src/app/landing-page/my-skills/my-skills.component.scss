@@ -11,28 +11,30 @@ section {
 
 .my-skills-contain {
     @include dFlex($jc: space-between);
+    height: 70vh;
 }
 
 .my-skills-text {
     display: flex;
 }
 
-.my-skills-vector1 {    
-    img{
+.my-skills-vector1 {
+    img {
         width: 428.59px;
         height: 951.44px;
     }
 }
 
 .icon-contain {
-    width: 721px;
-    height: 414.41px;
+    width: 48%;
+    height: 86%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 123px;
     margin-left: 100px;
-    padding-top: 100px;
+    margin-top: 157px;
+    z-index: 1;
 }
 
 .icon-img {
@@ -59,20 +61,25 @@ section {
 }
 
 .my-skills-text-contain {
-    width: 526px;
-    height: 180px;
+    width: 40%;
+    height: auto;
     display: flex;
     gap: 20px;
 
-    h2 {
-        font-family: Poppins;
-        font-size: 90px;
-        font-weight: 700;
-        line-height: 108px;
-        letter-spacing: 0em;
-        text-align: right;
-        color: $color_white;
+    .my-skills-overview {
+        @include dFlex($g:20px);
         width: 100%;
+
+        h2 {
+            font-family: Poppins;
+            font-size: 90px;
+            font-weight: 700;
+            line-height: 108px;
+            letter-spacing: 0em;
+            text-align: right;
+            color: $color_white;
+            width: 100%;
+        }
     }
 
     span {
@@ -85,6 +92,7 @@ section {
         text-align: right;
         color: $color_white;
         margin-top: 50px;
+        margin-right: 21vw;
     }
 }
 
@@ -96,12 +104,16 @@ section {
 }
 
 .my-skills-vector {
-    width: 58px;
+    width: 34%;
+}
+
+.my-skills-vector1 {
+    margin-top: -290px;
 }
 
 .example-button-row {
-    width: 200px;
-    height: 58px;
+    width: 156px;
+    height: 26px;
     padding: 15px 30px 15px 30px;
     border-radius: 10px;
     display: flex;
