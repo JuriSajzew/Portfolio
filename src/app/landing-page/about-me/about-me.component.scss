@@ -8,7 +8,6 @@ section {
     width: 100%;
     height: 170vh;
     background-color: $background_color;
-    border: 1px solid wheat;
 }
 
 .about-header {
@@ -79,4 +78,69 @@ section {
 .about-me-vector {
     position: absolute;
     right: 0;
+}
+
+@media (max-width:800px) {
+    section {
+        height: 85vh;
+    }
+
+    .image-contain {
+        display: none;
+    }
+
+    .about-me-contain {
+        @include dFlex();
+        flex-direction: column;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100vw;
+        height: 78vh;
+    }
+
+    .title-contain {
+        position: relative;
+        z-index: 1;
+
+        h2 {
+            width: 226px;
+            height: 54px;
+            font-weight: 700;
+            line-height: 54px;
+            font-size: 45px;
+            font-family: 'Poppins';
+            color: $color_white;
+        }
+
+        span {
+            width: 339px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 2vw;
+            margin-bottom: 2vw;
+        }
+    }
+
+    .about-me-contain1 {
+        width: 339px;
+        margin-left: 0;
+    }
+
+    span {
+        width: 252px;
+        height: 114px;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+
+    .about-me-vector {
+        top: 592px;
+        width: 123px;
+    }
 }
