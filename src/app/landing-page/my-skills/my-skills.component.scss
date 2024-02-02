@@ -67,7 +67,7 @@ section {
     gap: 20px;
 
     .my-skills-overview {
-        @include dFlex($g:20px);
+        @include dFlex($g: 20px);
         width: 100%;
 
         h2 {
@@ -135,4 +135,45 @@ section {
         color: $color_white;
     }
 
+}
+
+@media (max-width: 800px) {
+    .my-skills-contain {
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .my-skills-text-contain {
+        width: 358px;
+        height: 136px;
+        border: 1px solid white;
+        
+    }
+
+    .my-skills-text-contain{
+        span{
+            width: 100vw;
+            border: 1px solid white;
+        }
+    }
+
+    .my-skills-overview {
+        width: 198px;
+        height: 54px;
+        border: 1px solid white;
+        width: 100vw !important;
+
+        h2 {
+            font-size: 45px !important;
+            line-height: 54px !important;
+        }
+    }
+
+    .my-skills-vector{
+        width: 20px;
+    }
+
+    .example-button-row {
+        display: none;
+    }
 }
