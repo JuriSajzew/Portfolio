@@ -116,32 +116,38 @@ section {
     height: 26px;
     padding: 15px 30px 15px 30px;
     border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+
     background: #00BEE8;
     margin-top: 70px;
+    border: 1px solid white;
 
-    button {
+    span {
+        @include dFlex($g: 10px);
         font-family: Poppins;
         font-size: 23px;
         font-weight: 400;
         line-height: 28px;
         letter-spacing: 0em;
         text-align: center;
-        border: none;
-        background-color: $color_lightblue;
         color: $color_white;
     }
 
 }
 
+.example-button-row-mobile {
+    display: none;
+}
+
 @media (max-width: 800px) {
+    section {
+        height: auto;
+    }
+
     .my-skills-contain {
         justify-content: center;
         flex-direction: column-reverse;
-        height: 100vh;
+        height: auto;
+        border: 1px solid white;
     }
 
     .my-skills-text-contain {
@@ -160,7 +166,7 @@ section {
         }
     }
 
-    .my-skills-text{
+    .my-skills-text {
         gap: 20px;
     }
 
@@ -206,6 +212,35 @@ section {
             height: 17px;
             font-size: 14px;
             line-height: 16.8px;
+        }
+    }
+
+    .my-skills-vector1 {
+        width: 201px;
+        margin-top: -239px;
+    }
+
+    .example-button-row-mobile {
+        width: 158px;
+        height: 49px;
+        border-radius: 10px;
+        padding: 15px 30px 15px 30px;
+        background: #00BEE8;
+        position: relative;
+        z-index: 1;
+
+        span {
+            @include dFlex();
+            width: 100px;
+            height: 19px;
+            //styleName: Style 1/body;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: $color_white;
         }
     }
 }

@@ -1,11 +1,15 @@
 <section>
     <div class="my-skills-contain">
+        <button class="example-button-row-mobile">
+            <span>Get in Touch</span>
+        </button>
         <div class="icon-contain">
             <div class="icon-img" *ngFor="let element of iconImg; let i = index">
                 <img [src]="element" alt="Icon">
                 <span>{{iconText[i]}}</span>
             </div>
         </div>
+
         <div class="my-skills-text-contain">
             <div class="my-skills-text">
                 <div class="my-skills-overview">
@@ -17,12 +21,13 @@
                     that have allowed me to create different real
                     projects.
                 </span>
-                <div class="example-button-row">
-                    <button>Get in Touch</button>
-                </div>
+                <button class="example-button-row">
+                    <span>Get in Touch</span>
+                </button>
             </div>
 
         </div>
+
     </div>
     <img class="my-skills-vector1" src="./../../../assets/img/shadows/my-skills-vector.svg" alt="">
 </section>
