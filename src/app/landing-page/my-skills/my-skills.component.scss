@@ -116,12 +116,11 @@ section {
     height: 26px;
     padding: 15px 30px 15px 30px;
     border-radius: 10px;
-
     background: #00BEE8;
     margin-top: 70px;
     border: 1px solid white;
 
-    span {
+    .button-text {
         @include dFlex($g: 10px);
         font-family: Poppins;
         font-size: 23px;
@@ -147,7 +146,6 @@ section {
         justify-content: center;
         flex-direction: column-reverse;
         height: auto;
-        border: 1px solid white;
     }
 
     .my-skills-text-contain {
