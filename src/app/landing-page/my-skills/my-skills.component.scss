@@ -184,14 +184,15 @@ section {
 
     .icon-contain {
         width: 340px;
-        height: 451px;
+        height: 560px;
         margin-top: 0;
         margin-left: 0;
-        justify-content: center;
+        justify-content: start;
+        gap: 32px;
     }
 
     .icon-img {
-        width: 59px;
+        width: 92px;
         height: 100px;
 
         img {
@@ -201,7 +202,7 @@ section {
         }
 
         span {
-            width: 59px;
+            width: 84px;
             height: 17px;
             font-size: 14px;
             line-height: 16.8px;
