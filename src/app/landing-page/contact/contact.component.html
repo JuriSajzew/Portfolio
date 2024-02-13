@@ -21,12 +21,12 @@
                     Need a Frontend developer? <a href="">Contact me!</a>
                 </h5>
             </div>
+            <img class="contact-footer-vector" src="./../../../assets/img/shadows/contact_footer_vector.svg" alt="">
         </div>
-
         <div class="email-contain">
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your email">
-            <textarea name="message" placeholder="Your message"></textarea>
+            <input type="text" placeholder="Your Name" [(ngModel)]="name" required>
+            <input type="email" placeholder="Your email" [(ngModel)]="email" required>
+            <textarea name="message" placeholder="Your message" [(ngModel)]="message" required></textarea>
             <div class="checkbox-contain">
                 <img src="./../../../assets/img/shadows/contact_checkbox.svg" alt="">
                 <h5>
@@ -35,10 +35,12 @@
                     and agree to the processing of my data as outlined.
                 </h5>
             </div>
-            <button>Send message :)</button>
+            <button [disabled]="!isValid()" (click)="sendMessage()">
+                <span>Send message :)</span>
+            </button>
         </div>
-    </div>
-    <div class="contact-footer-vector">
-        <img src="./../../../assets/img/shadows/contact_footer_vector.svg" alt="">
+        <div class="vector-contact">
+            <img class="vector-contact-footer" src="./../../../assets/img/shadows/contact_footer_vector.svg" alt="">
+        </div>
     </div>
 </section>

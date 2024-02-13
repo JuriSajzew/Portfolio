@@ -6,13 +6,12 @@
 
 section {
     width: 100%;
-    height: auto;
+    height: 100vh;
     background-color: $background_color;
 }
 
 .contact-header {
     @include dFlex($jc: start, $g: 20px);
-    //border: 1px solid white;
 }
 
 .contact-vector {
@@ -42,11 +41,18 @@ section {
 
 .contact-contain {
     @include dFlex($jc: space-around, $g: 50px);
-    margin-top: 70px;
 }
 
 .email-text {
     width: 50%;
+    position: relative;
+    overflow: hidden;
+    height: auto;
+}
+
+.email-text1 {
+    margin-top: 10px;
+    margin-left: 100px;
 
     h4 {
         font-family: Poppins;
@@ -68,23 +74,34 @@ section {
         text-align: left;
         color: $color_white;
         margin-bottom: 22px;
+
+        a {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19.2px;
+            color: $color_white;
+            text-decoration: none;
+        }
     }
+
 }
 
-.email-text1 {
-    margin-top: 10px;
-    margin-left: 100px
+.contact-footer-vector {
+    width: 359px;
+    height: 528px;
+
+
 }
 
 .email-contain {
     @include dFlex();
     flex-direction: column;
     width: 50%;
+    height: 100vh;
 
     input {
-        width: 617px;
+        width: 68%;
         height: 50px;
-        padding: 15px 25px 15px 25px;
         border-radius: 10px;
         border: 1px;
         gap: 10px;
@@ -95,6 +112,7 @@ section {
         color: $color_white;
         transition: color 0.3sec;
         margin-bottom: 30px;
+        padding: 15px 25px 15px 25px;
 
         &::placeholder {
             font-family: Poppins;
@@ -104,9 +122,12 @@ section {
             letter-spacing: 0em;
             text-align: left;
             color: $color_white;
+
         }
 
         &:focus {
+            width: 617px;
+            height: 50px;
             color: $color_white;
             font-family: Poppins;
             font-size: 16px;
@@ -115,13 +136,13 @@ section {
             letter-spacing: 0em;
             text-align: left;
             color: $color_white;
+
         }
     }
 
     textarea {
-        width: 617px;
+        width: 68%;
         height: 202px;
-        padding: 15px 25px 15px 25px;
         border-radius: 10px;
         border: 1px;
         gap: 10px;
@@ -131,7 +152,7 @@ section {
         color: $color_white;
         transition: color 0.3sec;
         margin-bottom: 20px;
-
+        padding: 15px 25px 15px 25px;
 
         &::placeholder {
             font-family: Poppins;
@@ -141,9 +162,15 @@ section {
             letter-spacing: 0em;
             text-align: left;
             color: $color_white;
+            
+
+
         }
 
         &:focus {
+            width: 68%;
+            height: 202px;
+            border: 1px solid red;
             color: $color_white;
             font-family: Poppins;
             font-size: 16px;
@@ -152,6 +179,7 @@ section {
             letter-spacing: 0em;
             text-align: left;
             color: $color_white;
+            padding: 15px 25px 15px 25px;
         }
     }
 
@@ -201,15 +229,138 @@ section {
     }
 }
 
-.contact-footer-vector {
-    width: 600px;
-    height: 600px;
-    overflow: hidden;
-    @include dFlex($jc: start);
-    margin-top: 124px;
-    margin-bottom: -234px;
+.vector-contact {
+    display: none;
+}
 
-    img {
-        height: 100%;
+@media screen and (max-width: 800px) {
+    .contact-footer-vector {
+        display: none;
     }
+
+    section {
+        @include dFlex();
+        flex-direction: column;
+        height: 133vh;
+    }
+
+    .contact-header {
+        width: 100vw;
+    }
+
+    .contact-vector {
+        width: 30px;
+
+        img {
+            width: 20px;
+            border: 4px solid #4B47FF;
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+        }
+    }
+
+    .contact-text {
+        width: 188px;
+        height: 54px;
+        gap: 10px;
+
+        h2 {
+            font-size: 45px;
+            line-height: 54px;
+        }
+    }
+
+    .contact-contain {
+        @include dFlex();
+        flex-direction: column;
+        margin-top: 0;
+        position: relative;
+    }
+
+    .email-text {
+        width: 340px;
+    }
+
+    .email-text1 {
+        @include dFlex($g: 20px);
+        flex-direction: column;
+        margin-top: 0;
+        margin-left: 0;
+        width: 340px;
+        height: 238px;
+
+        h4 {
+            font-size: 23px;
+            line-height: 27.6px;
+            width: 340px;
+            height: 20px;
+        }
+
+        h5 {
+            width: 340px;
+            height: 76px;
+            font-size: 16px;
+            line-height: 19.2px;
+        }
+    }
+
+    .email-contain {
+        width: 340px;
+        height: 486px;
+        gap: 32px;
+        z-index: 1;
+
+        input {
+            width: 86%;
+            height: 40px;
+            padding: 0;
+            margin-bottom: 0;
+            padding: 15px 25px 15px 25px;
+
+            &:focus {
+                width: 86%;
+                height: 40px;
+            }
+        }
+
+        textarea {
+            width: 100%;
+            height: 162px;
+            margin-bottom: 0;
+        }
+
+        button {
+            width: 195px;
+            height: 49px;
+            margin-top: 0;
+            @include dFlex();
+
+            span {
+                width: 135px;
+                height: 19px;
+                font-size: 15px;
+                line-height: 19.2px;
+            }
+        }
+    }
+
+    .checkbox-contain {
+        width: 340px;
+    }
+
+    .vector-contact {
+        display: block;
+        width: 300px;
+        height: 500px;
+        overflow: hidden;
+        position: absolute;
+        left: -49px;
+        bottom: -344px;
+    }
+
+    .vector-contact-footer {
+        width: 359px;
+        height: 528px;
+    }
+
 }

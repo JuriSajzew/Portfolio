@@ -23,10 +23,27 @@ export class PortfolioComponent {
     'Angular | Typescript | HTML | CSS | Firebase',
     'JavaScript | HTML | CSS'
   ];
-  
+
   projectText: string[] = [
     'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
     'A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.'
   ];
 
+  liveUrls: string[] = [
+    'https://join.juridev.de',
+    'https://el-pollo-loco.juridev.de'
+  ];
+
+  githubUrls: string[] = [
+    '',
+    ''
+  ];
+
+  redirectToUrl(type: string, index: number) {
+    if (type === 'live') {
+      window.open(this.liveUrls[index], '_blank');
+    } else if (type === 'github') {
+      window.open(this.githubUrls[index], '_blank');
+    }
+  }
 }

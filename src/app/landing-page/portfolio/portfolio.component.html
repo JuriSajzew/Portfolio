@@ -24,10 +24,10 @@
                 {{projectText[i]}}
             </h5>
             <div class="button-contain">
-                <button class="button1">
+                <button class="button1" (click)="redirectToUrl('live', i)">
                     <span>Live test</span>
                 </button>
-                <button class="button2">
+                <button class="button2" (click)="redirectToUrl('github', i)">
                     <span>Github</span>
                 </button>
             </div>
